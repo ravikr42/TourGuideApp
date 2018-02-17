@@ -35,7 +35,7 @@
             tools:text="Place Name" />
 
         <TextView
-            android:id="@+id/place_address"
+            android:id="@+id/place_area"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_below="@id/place_name"
@@ -51,8 +51,8 @@
             android:id="@+id/small_text"
             android:layout_width="match_parent"
             android:layout_height="16dp"
-            android:layout_below="@id/place_address"
-            android:layout_marginBottom="4dp"
+            android:layout_below="@id/place_area"
+            android:layout_marginBottom="0dp"
             android:layout_marginLeft="16dp"
             android:textSize="10sp"
             android:textStyle="italic"

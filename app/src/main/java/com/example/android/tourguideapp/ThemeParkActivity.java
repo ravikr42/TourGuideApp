@@ -8,6 +8,6 @@ public class ThemeParkActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_theme_park);
+        setContentView(R.layout.place_list);
     }
 }

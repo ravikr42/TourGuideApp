@@ -8,6 +8,6 @@ public class OutdoorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_outdoor);
+        setContentView(R.layout.place_list);
     }
 }
