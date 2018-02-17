@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">TourGuideApp</string>
+    <string name="app_name">Bangalore Tour App</string>
+
+
+    <!--Tour App - Temple Category-->
+    <string name="category_temples">Temples</string>
+
+    <!--Tour App - Outdoor Category-->
+    <string name="category_outdoor">Outdoor</string>
+
+    <!--Tour App - Theme Parks-->
+    <string name="category_theme_park">Theme Parks</string>
+
+    <!--Tour App - Resorts-->
+    <string name="category_resorts">Resorts</string>
+
+    <!--Tour App - Things TO DO-->
+    <string name="category_things_todo">Things To Do</string>
+
+
 </resources>

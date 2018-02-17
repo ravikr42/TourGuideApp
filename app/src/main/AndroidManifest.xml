@@ -16,6 +16,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".TempleActivity"
+            android:label="@string/category_temples"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".OutdoorActivity"
+            android:label="@string/category_outdoor"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ThemeParkActivity"
+            android:label="@string/category_theme_park"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ResortsActivity"
+            android:label="@string/category_resorts"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ThingsToDoActivity"
+            android:label="@string/category_things_todo"
+            android:parentActivityName=".MainActivity" />
+
     </application>
 
 </manifest>

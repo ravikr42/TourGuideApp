@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@color/colorAccent"
+    android:minHeight="@dimen/list_item_height">
+
+    <ImageView
+        android:id="@+id/place_icon"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentRight="true" />
+
+    <RelativeLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/place_icon"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/place_name"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="Place Name" />
+
+        <TextView
+            android:id="@+id/place_address"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/place_name"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="Place Area Name" />
+
+        <TextView
+            android:id="@+id/small_text"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_below="@id/place_address"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            tools:text="*Tap to get more information" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
