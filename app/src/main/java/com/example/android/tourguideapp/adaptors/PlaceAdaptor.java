@@ -50,8 +50,8 @@ public class PlaceAdaptor extends ArrayAdapter<Place> {
         TextView placeAreaName = (TextView) listItemView.findViewById(R.id.place_area);
         placeAreaName.setText(place.getPlaceAreaName());
 
-//        TextView smallText = (TextView) listItemView.findViewById(R.id.small_text);
-//        smallText.setText(Place.PLACE_INFO);
+        TextView smallText = (TextView) listItemView.findViewById(R.id.small_text);
+        smallText.setText(Place.PLACE_INFO);
 
         View textContainer = listItemView.findViewById(R.id.text_container);
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
