@@ -1,7 +1,5 @@
 package com.example.android.tourguideapp.pojo;
 
-import com.example.android.tourguideapp.R;
-
 /**
  * Created by ravik on 2/17/2018.
  */
