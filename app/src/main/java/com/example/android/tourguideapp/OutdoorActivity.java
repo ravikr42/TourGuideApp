@@ -62,6 +62,5 @@ public class OutdoorActivity extends AppCompatActivity {
                 startActivity(templeIntent);
             }
         });
-
     }
 }

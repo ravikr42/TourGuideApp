@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         TextView resorts = (TextView) findViewById(R.id.resorts);
         TextView thingsToDo = (TextView) findViewById(R.id.things_to_do);
 
-
         temples.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(templesIntent);
             }
         });
-
 
         outdoor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +58,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(thingsToDoIntent);
             }
         });
-
     }
 }

@@ -19,19 +19,14 @@ public class PlaceInfoActivity extends AppCompatActivity {
         String placeAddress = intent.getStringExtra("placeAddress").trim();
         int imageResourceId = intent.getIntExtra("imageResource", R.drawable.ic_launcher);
 
-
         TextView placeHeader = (TextView) findViewById(R.id.place_header);
         ImageView placeImage = (ImageView) findViewById(R.id.place_image_demonstration);
         TextView address = (TextView) findViewById(R.id.place_address_detail);
         TextView timing = (TextView) findViewById(R.id.place_timing_detail);
 
-
         placeHeader.setText(placeName);
         placeImage.setImageResource(imageResourceId);
         address.setText(placeAddress);
         timing.setText(Place.CONSTANT_TIME);
-
-
-
     }
 }

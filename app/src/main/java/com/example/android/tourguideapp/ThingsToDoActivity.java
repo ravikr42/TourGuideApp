@@ -49,7 +49,5 @@ public class ThingsToDoActivity extends AppCompatActivity {
                 startActivity(templeIntent);
             }
         });
-
-
     }
 }

@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
                 android:background="#C6FF00"
-                android:text="Address"
+                android:text="@string/address"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:background="#F4FF81"
                 android:paddingLeft="8dp"
-                android:text="Place Address"
+                tools:text="Place Address"
                 android:textSize="20sp"
                 android:textStyle="italic" />
 
@@ -74,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
                 android:background="#C6FF00"
-                android:text="Timing"
+                android:text="@string/timing"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -85,7 +85,7 @@
                 android:paddingLeft="8dp"
                 android:layout_height="wrap_content"
                 android:background="#F4FF81"
-                android:text="Place Address"
+                tools:text="Place timing"
                 android:textSize="20sp"
                 android:textStyle="italic" />
 

@@ -18,4 +18,161 @@
     <string name="category_things_todo">Things To Do</string>
 
 
+    <!--Address Details for Temple Categories-->
+
+    <string name="iskon_address">
+        Hare Krishna Hill, Chord Road, Rajaji Nagar, Bengaluru, Karnataka 560010
+    </string>
+
+    <string name="bull_temple_address">
+        Bull Temple Road, Basavanagudi, Bengaluru, Karnataka 560004
+    </string>
+
+    <string name="sirdi_sai_blore_address">
+        No.3/1, Sri Shirdi Sai Mandir, Near BMTC Bus Depot,80ft Road, R.T.Nagar, Bangalore-560032
+    </string>
+
+    <string name="kote_venkat_address">
+        39, KR Rd, Kalasipalya, Bengaluru, Karnataka 560002
+    </string>
+
+    <string name="andrew_church_address">
+        27 Cubbon Road,, Bengaluru, Karnataka 560001
+    </string>
+
+    <string name="suryanarayna_address">
+        Krishna Reddy Layout, Amarjyoti Layout, Domlur, Bengaluru, Karnataka 560071
+    </string>
+
+    <string name="art_of_living_address">
+        21st Km, Udaypura, Kanakapura Road, Bengaluru
+    </string>
+
+    <string name="infant_jesus_address">
+        Infant Jesus Church Road, Viveka Nagar post, Bengaluru, Karnataka 560047
+    </string>
+
+    <string name="ragiguda_anjneya_address">
+         9th Block, Jayanagar, Bengaluru, Karnataka 560069
+    </string>
+
+    <string name="st_marks_address">
+        #1, M.G. Road, Near To Chinnaswami Stadium, Bengaluru, Karnataka 560001
+    </string>
+
+    <string name="dwadsha_jyortilinga_address">
+        Omkar Ashrama Maha Samasthana, Omkar Hills, Shrinivasapura, Bengaluru, Karnataka 560060
+    </string>
+
+    <string name="pyramid_address">
+        Maitreya-Buddha Vishwalayam, Kanakapura Road, Kebbedoddi Village, Kanakapura Taluk, Ramanagar, Harohalli Hobli, Karnataka 562112
+    </string>
+
+    <!--Address Details for Outdoor Categories-->
+
+    <string name="savandurga_trek_address">
+        Savandurga Trek Path, Savanadurga State Forest, Karnataka 562201
+    </string>
+
+    <string name="kunti_betta_address">
+        SH 19, Pandavapura, Karnataka 571434
+    </string>
+
+    <string name="antargange_cave_address">
+        Kolar District, Kolar, India
+    </string>
+
+    <string name="ramanagra_trek_address">
+        Mysore Road, Ramanagara, India
+    </string>
+
+    <string name="skandagiri_trek_address">
+        Nandi Hills | 3 Km from Chikballapur, Chikkaballapur, India
+    </string>
+
+    <string name="madhugiri_trek_address">
+        Madhugiri Fort Entrance, KSRTC Bus Stand Road, Madhugiri, Karnataka 572132
+    </string>
+
+    <string name="makalidurga_trek_address">
+        Near Makalidurga Railway Station, Doddaballapur, India
+    </string>
+
+    <string name="nandi_hills_trek_address">
+        Nandi Hills, Karnataka 562103
+    </string>
+
+    <!--Address Details for Resorts Category-->
+
+    <string name="the_golden_palms_address">
+        Golden Palms Avenue, Off Tumkur Road, Bangalore - 562 123, Karnataka, India
+    </string>
+
+    <string name="guhantra_resort_address">
+        Sy. No. 177, 177/18, Off Kanakapura Main Road, Nowkal Palya, Bangalore South Taluk, Kaggalipura, Karnataka 560082
+    </string>
+
+    <string name="windflower_prakurti_address">
+        Plot No.12A, Kundana Hobli, Devanahalli Taluk, Bangalore Dist, Hegganhalli, Karnataka 562110
+    </string>
+
+    <string name="discovery_village_address">
+        Discovery Village LLP, # 110/8, Krishnappa Layout,Lalbagh Road Cross,Bangalore – 560 027
+    </string>
+
+    <string name="wonderla_resort_address">
+        28th km, Mysore Road, Bengaluru, Karnataka 562109
+    </string>
+
+    <string name="clarks_exotica_address">
+        wiss Town, Hollywood Junction, Sadahalli Post, Devanahalli Road, Karnataka 562110
+    </string>
+
+    <!--Theme Parks Activity-->
+
+    <string name="wonderla_park_address">
+        28th Km, Mysore Rd, Bengaluru, Karnataka 562109
+    </string>
+
+    <string name="fun_world_park_address">
+        Palace Grounds, Opposite to TV Tower, J.C.Nagar, Bengaluru, Karnataka 560006
+    </string>
+
+    <string name="lumbini_garden_address">
+        Nagawara Lake, Ring Rd, Hebbal, Bengaluru, Karnataka 560045
+    </string>
+
+    <string name="innovative_film_city_address">
+        24 and 26, Kiadb Estates,birmangla cross, Bidali Industrial Area, Bengaluru, Karnataka 562109
+    </string>
+
+    <string name="snow_city_address">
+        Jayamahal, Fun World Complex, Opposite TV Tower, J C Nagar, Bengaluru, Karnataka 560006
+    </string>
+
+    <string name="star_city_address">
+         Palace Ground, Near-Post Office, Jayamahal Road, Bengaluru, Karnataka 560052
+    </string>
+
+    <!--Addresses for Things to do category-->
+    <string name="flower_market_address">
+        Near Avenue Road-Mysore Road junction, Bengaluru 560002, India
+    </string>
+
+    <string name="commercial_street_address">
+        Commercial Street | Tasker Town, Bengaluru 560001, India
+    </string>
+
+    <string name="bannerghatta_park_address">
+        Bannerghatta Biological Park, Bannerghatta, Bengaluru, Karnataka 560083
+    </string>
+
+    <string name="shivasamundra_falls_address">
+        Mandya District, Karnataka, India
+    </string>
+
+    <string name="address">Address</string>
+    <string name="timing">Timing</string>
+
+
 </resources>

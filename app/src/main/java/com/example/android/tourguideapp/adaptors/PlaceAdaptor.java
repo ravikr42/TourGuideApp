@@ -21,11 +21,10 @@ import java.util.List;
  */
 
 public class PlaceAdaptor extends ArrayAdapter<Place> {
-
     private String TAG_LOG = PlaceAdaptor.class.getSimpleName();
     private int mColorResourceId;
 
-    public PlaceAdaptor(Activity context, List<Place> placeList, int colorResourceId){
+    public PlaceAdaptor(Activity context, List<Place> placeList, int colorResourceId) {
         super(context, 0, placeList);
         this.mColorResourceId = colorResourceId;
     }
@@ -35,7 +34,7 @@ public class PlaceAdaptor extends ArrayAdapter<Place> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View listItemView = convertView;
 
-        if(listItemView == null){
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
@@ -56,9 +55,6 @@ public class PlaceAdaptor extends ArrayAdapter<Place> {
         View textContainer = listItemView.findViewById(R.id.text_container);
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         textContainer.setBackgroundColor(color);
-
-
-
 
         return listItemView;
     }
