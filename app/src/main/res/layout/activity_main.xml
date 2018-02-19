@@ -1,44 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
     tools:context="com.example.android.tourguideapp.MainActivity">
 
-    <TextView
-        android:id="@+id/temples"
-        style="@style/CategoryStyle"
-        android:text="@string/category_temples"
-        android:background="?android:attr/selectableItemBackground"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/temples_color">
+
+        <TextView
+            android:id="@+id/temples"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_temples" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/outdoor_color">
+
+        <TextView
+            android:id="@+id/outdoor"
+            style="@style/CategoryStyle"
+            android:layout_below="@id/temples"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_outdoor" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themepark_color">
+
+        <TextView
+            android:id="@+id/theme_parks"
+            style="@style/CategoryStyle"
+            android:layout_below="@id/outdoor"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_theme_park" />
+    </FrameLayout>
 
 
-    <TextView
-        android:id="@+id/outdoor"
-        style="@style/CategoryStyle"
-        android:layout_below="@id/temples"
-        android:text="@string/category_outdoor"
-        android:background="?android:attr/selectableItemBackground"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/resorts_color">
 
-    <TextView
-        android:id="@+id/theme_parks"
-        style="@style/CategoryStyle"
-        android:layout_below="@id/outdoor"
-        android:text="@string/category_theme_park"
-        android:background="?android:attr/selectableItemBackground"/>
+        <TextView
+            android:id="@+id/resorts"
+            style="@style/CategoryStyle"
+            android:layout_below="@id/theme_parks"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_resorts" />
 
-    <TextView
-        android:id="@+id/resorts"
-        style="@style/CategoryStyle"
-        android:layout_below="@id/theme_parks"
-        android:text="@string/category_resorts"
-        android:background="?android:attr/selectableItemBackground"/>
+    </FrameLayout>
 
-    <TextView
-        android:id="@+id/things_to_do"
-        style="@style/CategoryStyle"
-        android:layout_below="@id/resorts"
-        android:text="@string/category_things_todo"
-        android:background="?android:attr/selectableItemBackground"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/things_to_do_color">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/things_to_do"
+            style="@style/CategoryStyle"
+            android:layout_below="@id/resorts"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_things_todo" />
+    </FrameLayout>
+
+</LinearLayout>
