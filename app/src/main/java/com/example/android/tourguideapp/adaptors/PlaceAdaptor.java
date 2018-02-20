@@ -21,7 +21,6 @@ import java.util.List;
  */
 
 public class PlaceAdaptor extends ArrayAdapter<Place> {
-    private String TAG_LOG = PlaceAdaptor.class.getSimpleName();
     private int mColorResourceId;
 
     public PlaceAdaptor(Activity context, List<Place> placeList, int colorResourceId) {
@@ -29,33 +28,38 @@ public class PlaceAdaptor extends ArrayAdapter<Place> {
         this.mColorResourceId = colorResourceId;
     }
 
+    //View Holder Implementation
+    static class ViewHolderItem {
+        ImageView placeIcon;
+        TextView placeName;
+        TextView placeAreaName;
+    }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        View listItemView = convertView;
-
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+        ViewHolderItem viewHolder;
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+            viewHolder = new ViewHolderItem();
+            viewHolder.placeIcon = (ImageView) convertView.findViewById(R.id.place_icon);
+            viewHolder.placeName = (TextView) convertView.findViewById(R.id.place_name);
+            viewHolder.placeAreaName = (TextView) convertView.findViewById(R.id.place_area);
+            convertView.setTag(viewHolder);
+        } else {
+            viewHolder = (ViewHolderItem) convertView.getTag();
+        }
+        Place place = getItem(position);
+        if (place != null) {
+            viewHolder.placeIcon.setImageResource(place.getImageResourceId());
+            viewHolder.placeName.setText(place.getPlaceName());
+            viewHolder.placeAreaName.setText(place.getPlaceAreaName());
         }
 
-        Place place = getItem(position);
-
-        ImageView imageView = (ImageView) listItemView.findViewById(R.id.place_icon);
-        imageView.setImageResource(place.getImageResourceId());
-
-        TextView placeName = (TextView) listItemView.findViewById(R.id.place_name);
-        placeName.setText(place.getPlaceName());
-
-        TextView placeAreaName = (TextView) listItemView.findViewById(R.id.place_area);
-        placeAreaName.setText(place.getPlaceAreaName());
-
-        TextView smallText = (TextView) listItemView.findViewById(R.id.small_text);
-        smallText.setText(Place.PLACE_INFO);
-
-        View textContainer = listItemView.findViewById(R.id.text_container);
+        View textContainer = convertView.findViewById(R.id.text_container);
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         textContainer.setBackgroundColor(color);
-
-        return listItemView;
+        return convertView;
     }
+
 }

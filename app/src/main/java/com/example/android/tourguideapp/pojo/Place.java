@@ -5,9 +5,6 @@ package com.example.android.tourguideapp.pojo;
  */
 
 public class Place {
-    public static final String PLACE_INFO = "*Tap to get more information";
-    public static final String CONSTANT_TIME = "All days of the week\n10:00 AM - 6:00 PM";
-
     private String placeName;
     private String placeAreaName;
     private int imageResourceId;

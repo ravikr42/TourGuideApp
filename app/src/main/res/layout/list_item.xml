@@ -57,7 +57,7 @@
             android:layout_marginLeft="16dp"
             android:textSize="10sp"
             android:textStyle="italic"
-            tools:text="*Tap to get more information" />
+            android:text="@string/tap_for_place_info" />
     </RelativeLayout>
 
 

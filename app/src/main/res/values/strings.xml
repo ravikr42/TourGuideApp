@@ -174,5 +174,10 @@
     <string name="address">Address</string>
     <string name="timing">Timing</string>
 
+    <string name="tap_for_place_info">*Tap to get more information</string>
+    <string name="place_timing_info">All days of the week \n 10:00 AM - 6:00 PM</string>
+    <string name="Savandurga">Savandurga</string>
+    <string name="Savandurga_Magadi">Magadi</string>
+
 
 </resources>

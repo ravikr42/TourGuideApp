@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.tourguideapp.pojo.Place;
-
 public class PlaceInfoActivity extends AppCompatActivity {
 
     @Override
@@ -27,6 +25,6 @@ public class PlaceInfoActivity extends AppCompatActivity {
         placeHeader.setText(placeName);
         placeImage.setImageResource(imageResourceId);
         address.setText(placeAddress);
-        timing.setText(Place.CONSTANT_TIME);
+        timing.setText(getString(R.string.place_timing_info));
     }
 }

@@ -7,70 +7,38 @@
     android:orientation="vertical"
     tools:context="com.example.android.tourguideapp.MainActivity">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/temples_color">
+    <TextView
+        android:id="@+id/temples"
+        style="@style/CategoryStyle"
+        android:background="@color/temples_color"
+        android:text="@string/category_temples" />
 
-        <TextView
-            android:id="@+id/temples"
-            style="@style/CategoryStyle"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_temples" />
-    </FrameLayout>
+    <TextView
+        android:id="@+id/outdoor"
+        style="@style/CategoryStyle"
+        android:layout_below="@id/temples"
+        android:background="@color/outdoor_color"
+        android:text="@string/category_outdoor" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/outdoor_color">
+    <TextView
+        android:id="@+id/theme_parks"
+        style="@style/CategoryStyle"
+        android:layout_below="@id/outdoor"
+        android:background="@color/themepark_color"
+        android:text="@string/category_theme_park" />
 
-        <TextView
-            android:id="@+id/outdoor"
-            style="@style/CategoryStyle"
-            android:layout_below="@id/temples"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_outdoor" />
-    </FrameLayout>
+    <TextView
+        android:id="@+id/resorts"
+        style="@style/CategoryStyle"
+        android:layout_below="@id/theme_parks"
+        android:background="@color/resorts_color"
+        android:text="@string/category_resorts" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/themepark_color">
-
-        <TextView
-            android:id="@+id/theme_parks"
-            style="@style/CategoryStyle"
-            android:layout_below="@id/outdoor"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_theme_park" />
-    </FrameLayout>
-
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/resorts_color">
-
-        <TextView
-            android:id="@+id/resorts"
-            style="@style/CategoryStyle"
-            android:layout_below="@id/theme_parks"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_resorts" />
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/things_to_do_color">
-
-        <TextView
-            android:id="@+id/things_to_do"
-            style="@style/CategoryStyle"
-            android:layout_below="@id/resorts"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_things_todo" />
-    </FrameLayout>
+    <TextView
+        android:id="@+id/things_to_do"
+        style="@style/CategoryStyle"
+        android:layout_below="@id/resorts"
+        android:background="@color/things_to_do_color"
+        android:text="@string/category_things_todo" />
 
 </LinearLayout>

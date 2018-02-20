@@ -22,7 +22,7 @@ public class OutdoorActivity extends AppCompatActivity {
 
         final List<Place> places = new ArrayList<Place>();
 
-        places.add(new Place("Savandurga", "Magadi",
+        places.add(new Place(getString(R.string.Savandurga), getString(R.string.Savandurga_Magadi),
                 R.mipmap.savandurga, R.drawable.savandurga, R.string.savandurga_trek_address));
 
         places.add(new Place("Kunti Betta",
