@@ -22,30 +22,29 @@ public class OutdoorActivity extends AppCompatActivity {
 
         final List<Place> places = new ArrayList<Place>();
 
-        places.add(new Place(getString(R.string.Savandurga), getString(R.string.Savandurga_Magadi),
+        places.add(new Place(getString(R.string.Savandurga), getString(R.string.Savandurga_area),
                 R.mipmap.savandurga, R.drawable.savandurga, R.string.savandurga_trek_address));
 
-        places.add(new Place("Kunti Betta",
-                "Pandavapura",
+        places.add(new Place(getString(R.string.kunti), getString(R.string.kunti_betta_area),
                 R.mipmap.kunti_betta, R.drawable.kunti_betta, R.string.kunti_betta_address));
 
-        places.add(new Place("Anthargange Cave",
-                "Kolar", R.mipmap.anthargange, R.drawable.anthargange, R.string.antargange_cave_address));
+        places.add(new Place(getString(R.string.anthargange),
+                getString(R.string.anthargange_area), R.mipmap.anthargange, R.drawable.anthargange, R.string.antargange_cave_address));
 
-        places.add(new Place("Ramanagara Trek",
-                "Ramanagara", R.mipmap.ramanagara, R.drawable.ramanagara, R.string.ramanagra_trek_address));
+        places.add(new Place(getString(R.string.ramanagara), getString(R.string.ramanagara_area),
+                R.mipmap.ramanagara, R.drawable.ramanagara, R.string.ramanagra_trek_address));
 
-        places.add(new Place("Skandagiri Trek",
-                "Skandagiri", R.mipmap.skandagiri, R.drawable.skandagiri, R.string.skandagiri_trek_address));
+        places.add(new Place(getString(R.string.skandagiri),
+                getString(R.string.skandagiri_area), R.mipmap.skandagiri, R.drawable.skandagiri, R.string.skandagiri_trek_address));
 
-        places.add(new Place("Madhugiri Trek",
-                "Tumukur", R.mipmap.madhugiri, R.drawable.madhugiri, R.string.madhugiri_trek_address));
+        places.add(new Place(getString(R.string.madhugiri),
+                getString(R.string.madhugiri_area), R.mipmap.madhugiri, R.drawable.madhugiri, R.string.madhugiri_trek_address));
 
-        places.add(new Place("Makalidurga trek",
-                "Doddaballapura", R.mipmap.makalidurga, R.drawable.makalidurga, R.string.makalidurga_trek_address));
+        places.add(new Place(getString(R.string.makalidurga),
+                getString(R.string.makalidurga_area), R.mipmap.makalidurga, R.drawable.makalidurga, R.string.makalidurga_trek_address));
 
-        places.add(new Place("Nandi Hills Trek",
-                "Nandi Hills", R.mipmap.nandi_hills, R.drawable.nandi_hills, R.string.nandi_hills_trek_address));
+        places.add(new Place(getString(R.string.nandi_hills),
+                getString(R.string.nandi_hills_area), R.mipmap.nandi_hills, R.drawable.nandi_hills, R.string.nandi_hills_trek_address));
 
         PlaceAdaptor placeAdaptor = new PlaceAdaptor(this, places, R.color.outdoor_color);
         ListView listView = (ListView) findViewById(R.id.list);
@@ -55,11 +54,11 @@ public class OutdoorActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Place place = places.get(position);
-                Intent templeIntent = new Intent(view.getContext(), PlaceInfoActivity.class);
-                templeIntent.putExtra("placeName", place.getPlaceName());
-                templeIntent.putExtra("imageResource", place.getBigImageResourceId());
-                templeIntent.putExtra("placeAddress", getString(place.getAddressResourceId()));
-                startActivity(templeIntent);
+                Intent outdoorIntent = new Intent(view.getContext(), PlaceInfoActivity.class);
+                outdoorIntent.putExtra(getString(R.string.place_name_key), place.getPlaceName());
+                outdoorIntent.putExtra(getString(R.string.image_resource_key), place.getBigImageResourceId());
+                outdoorIntent.putExtra(getString(R.string.place_address_key), getString(place.getAddressResourceId()));
+                startActivity(outdoorIntent);
             }
         });
     }

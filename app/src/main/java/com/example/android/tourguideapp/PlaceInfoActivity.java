@@ -13,9 +13,9 @@ public class PlaceInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_place_info);
         Intent intent = getIntent();
-        String placeName = intent.getStringExtra("placeName");
-        String placeAddress = intent.getStringExtra("placeAddress").trim();
-        int imageResourceId = intent.getIntExtra("imageResource", R.drawable.ic_launcher);
+        String placeName = intent.getStringExtra(getString(R.string.place_name_key));
+        String placeAddress = intent.getStringExtra(getString(R.string.place_address_key)).trim();
+        int imageResourceId = intent.getIntExtra(getString(R.string.image_resource_key), R.drawable.ic_launcher);
 
         TextView placeHeader = (TextView) findViewById(R.id.place_header);
         ImageView placeImage = (ImageView) findViewById(R.id.place_image_demonstration);

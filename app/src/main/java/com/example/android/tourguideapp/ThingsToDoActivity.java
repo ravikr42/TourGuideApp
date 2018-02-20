@@ -22,17 +22,17 @@ public class ThingsToDoActivity extends AppCompatActivity {
 
         final List<Place> places = new ArrayList<>();
 
-        places.add(new Place("KR Flower Market",
-                "KR Market", R.mipmap.flower_market, R.drawable.flower_market, R.string.flower_market_address));
+        places.add(new Place(getString(R.string.flower_market),
+                getString(R.string.flower_market_area), R.mipmap.flower_market, R.drawable.flower_market, R.string.flower_market_address));
 
-        places.add(new Place("Commercial Street",
-                "Shivaji Nagar", R.mipmap.commercial_street, R.drawable.commercial_street, R.string.commercial_street_address));
+        places.add(new Place(getString(R.string.comm_street),
+                getString(R.string.comm_street_area), R.mipmap.commercial_street, R.drawable.commercial_street, R.string.commercial_street_address));
 
-        places.add(new Place("Bannerghatta National Park",
-                "Bannerghatta", R.mipmap.banerghatta_park, R.drawable.banerghatta_park, R.string.bannerghatta_park_address));
+        places.add(new Place(getString(R.string.baneer_nat_park),
+                getString(R.string.baneer_nat_park_area), R.mipmap.banerghatta_park, R.drawable.banerghatta_park, R.string.bannerghatta_park_address));
 
-        places.add(new Place("Shivanasamudra Falls",
-                "Chamarajanagar", R.mipmap.shivanasamudra, R.drawable.shivanasamudra, R.string.shivasamundra_falls_address));
+        places.add(new Place(getString(R.string.shiva_falls),
+                getString(R.string.shiva_falls_area), R.mipmap.shivanasamudra, R.drawable.shivanasamudra, R.string.shivasamundra_falls_address));
 
         PlaceAdaptor placeAdaptor = new PlaceAdaptor(this, places, R.color.things_to_do_color);
         ListView listView = (ListView) findViewById(R.id.list);
@@ -42,11 +42,11 @@ public class ThingsToDoActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Place place = places.get(position);
-                Intent templeIntent = new Intent(view.getContext(), PlaceInfoActivity.class);
-                templeIntent.putExtra("placeName", place.getPlaceName());
-                templeIntent.putExtra("imageResource", place.getBigImageResourceId());
-                templeIntent.putExtra("placeAddress", getString(place.getAddressResourceId()));
-                startActivity(templeIntent);
+                Intent thingsToDoIntent = new Intent(view.getContext(), PlaceInfoActivity.class);
+                thingsToDoIntent.putExtra(getString(R.string.place_name_key), place.getPlaceName());
+                thingsToDoIntent.putExtra(getString(R.string.image_resource_key), place.getBigImageResourceId());
+                thingsToDoIntent.putExtra(getString(R.string.place_address_key), getString(place.getAddressResourceId()));
+                startActivity(thingsToDoIntent);
             }
         });
     }
